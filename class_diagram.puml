@@ -1,0 +1,43 @@
+@startuml class_alquilero
+
+class Admin {
+  +gestionarUsuarios()
+  +gestionarDepartamentos()
+  +asignarTecnicos()
+  +gestionarServicios()
+}
+
+class User {
+  +solicitarServicio()
+  +verEstadoServicio()
+}
+
+class Apartment {
+  -direccion
+  -estado
+  +asignarUsuario(User)
+}
+
+class Technician {
+  +aceptarServicio()
+  +actualizarEstadoServicio()
+}
+
+class Service {
+  -tipo
+  -descripcion
+  -estado
+  +crearSolicitud()
+  +actualizarEstado()
+}
+
+Admin --> User
+Admin --> Apartment
+Admin --> Technician
+Admin --> Service
+
+User --> Apartment
+Apartment --> Service
+Technician --> Service
+
+@enduml

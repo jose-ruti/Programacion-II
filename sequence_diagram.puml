@@ -1,0 +1,17 @@
+@startuml sequence_alquilero
+
+actor User
+participant "Sistema" as S
+participant "Admin" as A
+participant "Technician" as T
+
+User -> S : Iniciar sesión
+User -> S : Solicitar servicio (agua/luz/gas/internet)
+S -> A : Notificar solicitud nueva
+A -> S : Asignar técnico
+S -> T : Enviar solicitud
+T -> S : Aceptar solicitud
+T -> S : Actualizar estado a "En progreso"
+S -> User : Mostrar estado actualizado
+
+@enduml
