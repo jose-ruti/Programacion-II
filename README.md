@@ -25,7 +25,7 @@ Este proyecto lo que busca es que el administrador de un edificio pueda manejar 
 
 #### 👤 Usuario
 - Iniciar sesión  
-- Solicitar servicio técnico (agua/luz/gas/internet)  
+- Solicitar servicio técnico (alquiler/agua/luz/gas/internet)  
 - Ver estado de su solicitud  
 
 #### 🔧 Técnico

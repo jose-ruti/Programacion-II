@@ -6,7 +6,7 @@ participant "Admin" as A
 participant "Technician" as T
 
 User -> S : Iniciar sesión
-User -> S : Solicitar servicio (agua/luz/gas/internet)
+User -> S : Solicitar servicio (alquiler/agua/luz/gas/internet)
 S -> A : Notificar solicitud nueva
 A -> S : Asignar técnico
 S -> T : Enviar solicitud
