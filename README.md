@@ -37,12 +37,5 @@ Este proyecto lo que busca es que el administrador de un edificio pueda manejar 
 - Notifica nuevas solicitudes al administrador  
 - Conecta usuarios, técnicos y departamentos según las acciones  
 
----
-
-## 📊 Diagramas UML
-
-
-
----
 
 
